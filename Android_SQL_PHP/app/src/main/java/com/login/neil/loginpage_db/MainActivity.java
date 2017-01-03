@@ -93,7 +93,7 @@ public class MainActivity extends ActionBarActivity {
                 try
                 {
                     HttpClient httpclient = new DefaultHttpClient();
-                    HttpPost httppost = new HttpPost("http://192.168.1.3/test_android/insert.php");
+                    HttpPost httppost = new HttpPost("http://SERVER IP ADDRESS/insert.php");
 
                     httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                     HttpResponse response = httpclient.execute(httppost);
@@ -183,7 +183,7 @@ public class MainActivity extends ActionBarActivity {
                 try
                 {
                     HttpClient httpclient = new DefaultHttpClient();
-                    HttpPost httppost = new HttpPost("http://192.168.1.3/test_android/select.php");
+                    HttpPost httppost = new HttpPost("SERVER IP ADDRESS/select.php");
 
                     httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                     HttpResponse response = httpclient.execute(httppost);
