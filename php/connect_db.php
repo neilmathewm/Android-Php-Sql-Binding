@@ -1,6 +1,6 @@
 <?php
 error_reporting(0); 
-$con=mysql_connect("localhost","root","");
+$con=mysql_connect("SERVER IP","YOUR USERNAME","YOUR PASSWORD");
 if(!$con)
 {
 echo "not connected";
